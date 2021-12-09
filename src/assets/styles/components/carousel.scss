@@ -1,0 +1,42 @@
+.carousel-container {
+	width: 100%;
+
+	.carousel {
+		width: 100%;
+		display: flex;
+		margin-bottom: 3rem;
+		transition: 750ms ease;
+
+		.carousel-item {
+			width: calc((100% / 4) - 1.5rem);
+			flex-shrink: 0;
+			margin-right: 2rem;
+		}
+	}
+
+	.carousel-nav {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+
+		button {
+			background: none;
+			border: 1px solid transparent;
+			border-radius: 50%;
+			cursor: pointer;
+			padding: 0.75rem;
+			line-height: 9px;
+			transition: 250ms ease;
+
+			svg {
+				width: 24px;
+				height: 24px;
+				filter: contrast(0.2);
+			}
+
+			&:hover {
+				border: 1px solid fade-out($secondary-color, 0.85);
+			}
+		}
+	}
+}

@@ -3,6 +3,7 @@ footer {
 
 	.footer-container {
 		width: 100%;
+		padding: 2rem 0 3rem;
 
 		.main-row {
 			width: 100%;
@@ -72,7 +73,7 @@ footer {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 1rem 0 3rem;
+			padding-top: 1rem;
 
 			.socials {
 				display: flex;

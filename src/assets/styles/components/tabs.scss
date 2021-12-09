@@ -1,0 +1,74 @@
+.tabs-container {
+	width: 100%;
+
+	.tabs {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		margin-bottom: 4rem;
+
+		.tab {
+			margin: 0 1.25rem;
+
+			button {
+				border: none;
+				background: none;
+				position: relative;
+				cursor: pointer;
+
+				&::after {
+					content: '';
+					background: $secondary-color;
+					width: 0;
+					height: 2px;
+					position: absolute;
+					bottom: -5px;
+					left: 0;
+					transition: 500ms ease;
+				}
+
+				span {
+					font-size: 1rem;
+					transition: 500ms ease;
+				}
+
+				&:hover {
+					&::after {
+						width: 60%;
+					}
+					span {
+						-webkit-text-stroke: 0.4px $secondary-color;
+					}
+				}
+			}
+
+			&.tab-active {
+				button {
+					&::after {
+						width: 100%;
+					}
+					span {
+						-webkit-text-stroke: 0.4px $secondary-color;
+					}
+				}
+			}
+		}
+	}
+
+	.tabs-content {
+		.tab-pane {
+			display: none;
+
+			&.tab-pane-active {
+				display: block;
+			}
+
+			.categories {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 2rem;
+			}
+		}
+	}
+}
