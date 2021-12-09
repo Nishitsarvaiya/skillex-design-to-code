@@ -4,6 +4,9 @@
 // Global Styles
 @import 'global.scss';
 
+//Page specific styles
+@import 'page.scss';
+
 // Components
 @import './components/header.scss';
 @import './components/footer.scss';

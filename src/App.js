@@ -1,11 +1,95 @@
 import { Carousel, Footer, Header, Tabs } from './components';
 import './assets/styles/app.scss';
+import Person1 from './assets/images/person-1.jpg';
+import Person2 from './assets/images/person-2.jpg';
+import Person3 from './assets/images/person-3.jpg';
 
 const App = () => {
 	return (
 		<div className='App'>
 			<Header />
 			<main>
+				<section className='hero-section'>
+					<div className='container'>
+						<div className='hero'>
+							<div className='hero-left'>
+								<div className='hero-title'>
+									<h1>
+										Watch.
+										<br />
+										Learn.
+										<br />
+										Grow.
+									</h1>
+								</div>
+								<form>
+									<div className='custom-input'>
+										<input type='text' placeholder='Find you passion' />
+										<a href='#'>Go</a>
+									</div>
+								</form>
+							</div>
+							<div className='hero-right'>
+								<div className='hero-grid'>
+									<div className='grid-item grid-item-active'>
+										<div className='grid-item-image'>
+											<img src={Person1} alt='' />
+										</div>
+										<div className='grid-item-info'>
+											<h1>Writing</h1>
+										</div>
+										<div className='grid-item-info-active'>
+											<h1>
+												Writing
+												<br />
+												Course
+											</h1>
+											<h1>
+												100<p>Topics</p>
+											</h1>
+										</div>
+									</div>
+									<div className='grid-item'>
+										<div className='grid-item-image'>
+											<img src={Person2} alt='' />
+										</div>
+										<div className='grid-item-info'>
+											<h1>Writing</h1>
+										</div>
+										<div className='grid-item-info-active'>
+											<h1>
+												Writing
+												<br />
+												Course
+											</h1>
+											<h1>
+												100<p>Topics</p>
+											</h1>
+										</div>
+									</div>
+									<div className='grid-item'>
+										<div className='grid-item-image'>
+											<img src={Person3} alt='' />
+										</div>
+										<div className='grid-item-info'>
+											<h1>Business</h1>
+										</div>
+										<div className='grid-item-info-active'>
+											<h1>
+												Business
+												<br />
+												Course
+											</h1>
+											<h1>
+												100<p>Topics</p>
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section className='categories-section'>
 					<div className='section-head'>
 						<h1>
