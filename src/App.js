@@ -3,6 +3,7 @@ import './assets/styles/app.scss';
 import Person1 from './assets/images/person-1.jpg';
 import Person2 from './assets/images/person-2.jpg';
 import Person3 from './assets/images/person-3.jpg';
+import Skills from './assets/images/skills.jpg';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -122,6 +123,55 @@ const App = () => {
                         </h1>
                     </div>
                     <Tabs />
+                </section>
+                <section className="skills-section">
+                    <div className="container">
+                        <div className="skills">
+                            <h1 className='skills-title'>
+                                Get the skills you
+                                <br />
+                                need for a job that
+                                <br />
+                                is in demand<span className='green-dot'>.</span>
+                            </h1>
+                            <div className="skills-content">
+                                <div className="skills-list">
+                                    <div className="skill">
+                                        <div className="skill-icon">
+                                            <img src="https://img.icons8.com/windows/24/faa789/prize.png" alt='leadership'/>
+                                        </div>
+                                        <div className="skill-info">
+                                            <h3>Leadership</h3>
+                                            <p>Fully committed to the success of the company</p>
+                                        </div>
+                                    </div>
+                                    <div className="skill">
+                                        <div className="skill-icon">
+                                            <img src="https://img.icons8.com/windows/24/faa789/brain.png" alt='Responsibility'/>
+                                        </div>
+                                        <div className="skill-info">
+                                            <h3>Responsibility</h3>
+                                            <p>Employees will always be my top priority</p>
+                                        </div>
+                                    </div>
+                                    <div className="skill">
+                                        <div className="skill-icon">
+                                            <img src="https://img.icons8.com/material-outlined/24/faa789/lightning-bolt.png" alt='Flexibility'/>
+                                        </div>
+                                        <div className="skill-info">
+                                            <h3>Flexibility</h3>
+                                            <p>The ability to switch is an important skill</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="skills-video">
+                                    <div className="video">
+                                        <img src={Skills} alt="skills" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section className='customer-section'>
                     <div className='section-head'>
