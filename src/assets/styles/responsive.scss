@@ -1,0 +1,44 @@
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		.header-container {
+			.nav,
+			.cta-group {
+				display: none;
+			}
+			.hamburger {
+				display: flex;
+			}
+		}
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.tabs-container {
+		.tabs-content {
+			.tab-pane {
+				.categories {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.tabs-container {
+		.tabs-content {
+			.tab-pane {
+				.categories {
+					grid-template-columns: repeat(1, 1fr);
+				}
+			}
+		}
+	}
+}

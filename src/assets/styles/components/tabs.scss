@@ -4,12 +4,13 @@
 	.tabs {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		list-style: none;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 
 		.tab {
-			margin: 0 1.25rem;
+			margin: 0 1.25rem 2rem;
 
 			button {
 				border: none;

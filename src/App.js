@@ -31,7 +31,7 @@ const App = () => {
 		<div className='App'>
 			<Header />
 			<main>
-				<section className='hero-section'>
+				<section className='hero-section' id='passion'>
 					<div className='container'>
 						<div className='hero'>
 							<div className='hero-title'>
@@ -116,7 +116,7 @@ const App = () => {
 						</div>
 					</div>
 				</section>
-				<section className='categories-section'>
+				<section className='categories-section' id='categories'>
 					<div className='section-head'>
 						<h1>
 							Unlimited access to 100+ instructors<span className='green-dot'>.</span>
@@ -124,7 +124,7 @@ const App = () => {
 					</div>
 					<Tabs />
 				</section>
-				<section className='skills-section'>
+				<section className='skills-section' id='skills'>
 					<div className='container'>
 						<div className='skills'>
 							<h1 className='skills-title'>
@@ -208,7 +208,7 @@ const App = () => {
 						</div>
 					</div>
 				</section>
-				<section className='customer-section'>
+				<section className='customers-section' id='customers'>
 					<div className='section-head'>
 						<h1>
 							What our customers say<span className='green-dot'>.</span>

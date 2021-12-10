@@ -30,6 +30,7 @@ body {
 	background-repeat: no-repeat;
 	overflow-x: hidden;
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 a,
@@ -62,8 +63,9 @@ input {
 }
 
 .container {
-	max-width: 1280px;
+	max-width: calc(1280px + 1rem);
 	width: 100%;
+	padding: 0 1rem;
 	margin: 0 auto;
 }
 
@@ -106,7 +108,7 @@ section {
 	margin-bottom: 3rem;
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: clamp(2rem, 4vw, 2.5rem);
 		font-weight: 700;
 	}
 }
