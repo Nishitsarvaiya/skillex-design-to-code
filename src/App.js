@@ -42,12 +42,12 @@ const App = () => {
                                     Grow.
                                 </h1>
                             </div>
-                            <form>
-                                <div className='custom-input'>
-                                    <input type='text' placeholder='Find you passion' />
-                                    <a href='#'>Go</a>
-                                </div>
-                            </form>
+                            <div className='custom-input'>
+                                <input type='text' placeholder='Find you passion' />
+                                <a href='#'>
+                                    <span>Go</span>
+                                </a>
+                            </div>
                             <div className='hero-grid'>
                                 <div
                                     className={activePassion === 1 ? 'grid-item grid-item-active' : 'grid-item'}

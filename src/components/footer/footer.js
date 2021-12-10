@@ -38,8 +38,10 @@ const Footer = () => {
 						<h3 className='community-title'>Join our community</h3>
 						<form>
 							<div className='custom-input'>
-								<input type='text' />
-								<a href='#'>Go</a>
+								<input type='text' placeholder='Enter your email'/>
+								<a href='#'>
+									<span>Go</span>
+								</a>
 							</div>
 						</form>
 					</div>
